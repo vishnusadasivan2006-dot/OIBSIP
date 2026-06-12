@@ -1,0 +1,19 @@
+
+  Voice Assistant - Requirements
+  Created by: VISHNU S
+
+Speech Recognition (converts voice to text via Google API)
+SpeechRecognition==3.10.4
+
+ Text-to-Speech (converts text to spoken audio — works offline)
+pyttsx3==2.90
+
+ Wikipedia API wrapper (for fetching knowledge/summaries)
+wikipedia==1.4.0
+
+ PyAudio — required by SpeechRecognition to access the microphone
+
+ Windows : pip install pipwin -> pipwin install pyaudio
+ Mac     : brew install portaudio -> pip install pyaudio
+Linux   : sudo apt-get install python3-pyaudio
+pyaudio==0.2.14
