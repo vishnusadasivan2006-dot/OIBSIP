@@ -1,0 +1,2 @@
+# Optional dependency to enable clipboard copying feature
+pyperclip==2.1.0
