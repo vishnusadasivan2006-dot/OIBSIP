@@ -1,0 +1,2 @@
+# Required to handle API requests to OpenWeatherMap
+requests==2.31.0

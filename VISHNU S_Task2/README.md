@@ -1,6 +1,6 @@
 # ⚖️ BMI Calculator (Body Mass Index)
 
-A user-friendly, command-line Python application designed to calculate Body Mass Index (BMI) based on user inputs for weight and height, offering classification and practical health advice.
+A user-friendly Python application designed to calculate Body Mass Index (BMI) based on user inputs for weight and height, offering classification and practical health advice.
 
 Created by **[Vishnu S](https://github.com/vishnusadasivan2006)** as part of the **Oasis Infobyte Internship Project (OIBSIP)**.
 
@@ -24,7 +24,7 @@ Created by **[Vishnu S](https://github.com/vishnusadasivan2006)** as part of the
 
 ## 🚀 Running the Calculator
 
-No external Python dependencies are needed. Simply open a terminal in the folder containing `VISHNU S_2.py` and run:
+No external Python dependencies are needed. Simply run the script using:
 
 ```bash
 python "VISHNU S_2.py"

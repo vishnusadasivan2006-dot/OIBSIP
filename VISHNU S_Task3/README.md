@@ -1,6 +1,6 @@
 # 🔑 Secure Password Generator
 
-A secure, interactive command-line Python utility designed to generate strong, customizable random passwords based on user-defined constraints.
+A secure, interactive Python utility designed to generate strong, customizable random passwords based on user-defined constraints.
 
 Created by **[Vishnu S](https://github.com/vishnusadasivan2006)** as part of the **Oasis Infobyte Internship Project (OIBSIP)**.
 
@@ -31,7 +31,7 @@ pip install -r requirements.txt
 
 ## 🚀 Running the Generator
 
-Open a terminal in the folder containing `VISHNU S_3.py` and run:
+Run the script using:
 
 ```bash
 python "VISHNU S_3.py"
@@ -46,7 +46,7 @@ python "VISHNU S_3.py"
            PASSWORD GENERATOR  v1.0
             Created by : VISHNU S
 ========================================================
-  Generate strong passwords right from your terminal!
+  Generate strong passwords securely and instantly!
 ========================================================
 
 [ STEP 1 ]  Set Password Length
