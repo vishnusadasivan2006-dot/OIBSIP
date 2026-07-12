@@ -1,0 +1,113 @@
+# 🎙️ AI Voice Assistant (Jarvis)
+
+A modern, responsive, and lightweight Python-based voice assistant designed to process voice commands, answer queries, perform web searches, and automate browser tasks. 
+
+Created by **[Vishnu S](https://github.com/vishnusadasivan2006)** as part of the **Oasis Infobyte Internship Project (OIBSIP)**.
+
+---
+
+## 🌟 Key Features
+
+- 🗣️ **Text-to-Speech (TTS) Engine**: Responsive offline voice feedback using `pyttsx3`.
+- 🎤 **Speech Recognition**: Real-time voice-to-text processing powered by Google's Speech Recognition API.
+- 📅 **Date & Time Queries**: Instantly fetch the current day, date, or time.
+- 📚 **Wikipedia Integration**: Intelligent search queries returning concise, 2-sentence summaries.
+- 🌐 **Web Automation**: Launch browser searches (Google) and open common websites:
+  - YouTube
+  - Google
+  - GitHub
+  - Instagram
+  - Wikipedia
+- 🎭 **Interactive & Entertainment**: Ask for a joke, check how it is doing, or chat with basic interactive greetings.
+- ⚡ **Graceful Error Handling**: Ambient noise calibration, timeout guards, and automated fallback to Google search when Wikipedia records are missing.
+
+---
+
+## 📋 Prerequisites & Installation
+
+### 1. Clone or Open the Directory
+Ensure you are in the project folder containing `VISHNU S_1.py` and `requirements.txt`.
+
+### 2. Install System Dependencies (PyAudio)
+`PyAudio` is required by the `SpeechRecognition` library to capture microphone input. Depending on your Operating System, run the following setup before installing pip packages:
+
+- **Windows**:
+  ```bash
+  pip install pipwin
+  pipwin install pyaudio
+  ```
+- **macOS**:
+  ```bash
+  brew install portaudio
+  pip install pyaudio
+  ```
+- **Linux (Debian/Ubuntu)**:
+  ```bash
+  sudo apt-get install python3-pyaudio
+  ```
+
+### 3. Install Python Dependencies
+Install the required packages listed in the requirements file:
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 🚀 Running the Assistant
+
+Execute the voice assistant script using:
+```bash
+python "VISHNU S_1.py"
+```
+
+Upon launching, the console will show a styled startup banner and announce that **Jarvis** is ready.
+
+---
+
+## 💬 Commands You Can Try
+
+Here are some sample commands you can speak:
+
+| Category | Example Command / Phrase | Action Performed |
+|---|---|---|
+| **Greetings** | *"Hello"*, *"Good morning"*, *"Hey"* | Greets you back with personalized messages. |
+| **Identity** | *"Who created you?"*, *"What is your name?"* | Describes itself, its version, and its creator. |
+| **Time & Date** | *"What time is it?"*, *"Today's date"*, *"What day is it?"* | Speaks and prints the current system date/time. |
+| **Information** | *"Who is Albert Einstein?"*, *"Explain Quantum Physics"* | Fetches summary paragraphs from Wikipedia. |
+| **Search** | *"Search for machine learning tutorials"*, *"Google spaceships"* | Opens Google Search in your default web browser. |
+| **Open Websites** | *"Open YouTube"*, *"Open GitHub"*, *"Open Instagram"* | Opens the requested URL in your default browser. |
+| **Humor** | *"Tell me a joke"* | Reads out a random tech-related joke. |
+| **Exit** | *"Bye"*, *"Exit"*, *"Quit"*, *"Shut down"* | Plays a farewell message and shuts down safely. |
+
+---
+
+## ⚙️ Configuration & Customization
+
+You can easily customize the assistant settings at the top of the `VISHNU S_1.py` file under the configuration block:
+
+```python
+# VISHNU S_1.py (Lines 25 - 41)
+ASSISTANT_NAME = "Jarvis"
+CREATOR_NAME   = "Vishnu S"
+VERSION        = "1.0"
+
+# Adjust voice rate (speed) and volume
+engine.setProperty('rate', 155)      # Speed (words per minute)
+engine.setProperty('volume', 1.0)    # Volume (0.0 to 1.0)
+
+# Set Voice Gender: Index 0 = Male, Index 1 = Female
+voices = engine.getProperty('voices')
+if voices:
+    engine.setProperty('voice', voices[0].id)
+```
+
+---
+
+## 📂 Project Structure
+
+```text
+├── VISHNU S_1.py        # Main application containing logic, listeners, and handlers
+├── requirements.txt     # List of dependencies and install instructions
+└── README.md            # Project documentation (this file)
+```
